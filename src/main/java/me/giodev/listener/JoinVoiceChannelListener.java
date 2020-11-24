@@ -24,9 +24,8 @@ public class JoinVoiceChannelListener extends ListenerAdapter {
                 chanel.sendMessage("HOJE N, AQUI É XANDÃO").queue();
             });
 
-        }catch (Exception ex){
-
+        }catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
-
 }

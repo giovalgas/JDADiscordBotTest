@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.entities.MessageEmbed;
 
 import java.util.*;
 
-public class Classes {
+public class SchoolClasses {
 
     HashMap<String, String> className = new HashMap<>();
     HashMap<String, String> classLink = new HashMap<>();
@@ -21,7 +21,7 @@ public class Classes {
             {"PORT", "PORT", "HIST", "ER", "GEO", "FIS", "ACABOU"}
     };
 
-    public Classes(){
+    public SchoolClasses(){
 
     }
 
@@ -158,8 +158,8 @@ public class Classes {
         eb.setFooter("haha brr - " + now.getHours() + ":" + now.getMinutes(), BrrMain.getGuild().getSelfMember().getUser().getAvatarUrl());
         eb.setThumbnail("https://pbs.twimg.com/profile_images/983018479644303361/UD5uocVf_400x400.jpg");
 
-        BrrMain.getGuild().getTextChannelById(BrrMain.getCleitonId()).sendMessage(eb.build()).queue();
-        BrrMain.getGuild().getTextChannelById(BrrMain.getCleitonId()).sendMessage(BrrMain.getGuild().getRoleById("754331414618439722").getAsMention()).queue();
+        BrrMain.getGuild().getTextChannelById(BrrMain.getChannelId()).sendMessage(eb.build()).queue();
+        BrrMain.getGuild().getTextChannelById(BrrMain.getChannelId()).sendMessage(BrrMain.getGuild().getRoleById("754331414618439722").getAsMention()).queue();
 
     }
 
